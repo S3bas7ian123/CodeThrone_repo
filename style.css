@@ -12,6 +12,17 @@ html, body {
     background-color: rgba(0, 86, 173, 0.767);
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* article { 
+    margin: 10rem;
+} */
+
 .setHuge {
     color: rgb(255, 217, 111);
 }
