@@ -12,6 +12,14 @@ html, body {
     background-color: rgba(0, 86, 173, 0.767);
 }
 
+h1, h4, p {
+    padding: 5px;
+}
+
+h4 {
+    font-size: 13px;
+}
+
 /*Normal CSS*/
 body {
     display: flex;
@@ -24,15 +32,19 @@ article {
     margin: 10rem;
     height: 350px;
     width: 450px;
-    /* background-color: rgb(209, 233, 255); */
+    background-color: rgb(113, 161, 177);
 } 
 
 section {
     padding: 10px;
 }
 
-section > h1 {
+section h1, h4{
     text-align: center;
+}
+
+section p {
+    text-align: justify;
 }
 
 div {
@@ -50,8 +62,18 @@ ul {
     list-style-type: none;
 }
 
+li {
+    cursor: pointer;
+}
+
+i {
+    font-size: 20px;
+    color: rgb(255, 217, 111);
+}
+
 button {
     padding: 8px 15px;
+    cursor: pointer;
     border: 1px groove rgb(255, 217, 111);
     border-radius: 50px;
     color: rgb(255, 217, 111);
@@ -60,12 +82,11 @@ button {
     font-weight: 700;
 }
 
-.setHuge {
+.setHuge, .setTiny {
     color: rgb(255, 217, 111);
 }
 
 .setTiny {
-    color: rgb(215, 156, 55);
     font-family: 'Gruppo', sans-serif;
 }
 
