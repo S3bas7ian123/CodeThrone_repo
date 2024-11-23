@@ -23,8 +23,20 @@ article {
     margin: 10rem;
     height: 350px;
     width: 450px;
-    background-color: rgb(209, 233, 255);
+    /* background-color: rgb(209, 233, 255); */
 } 
+
+section {
+    padding: 10px;
+}
+
+section > h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
 
 .setHuge {
     color: rgb(255, 217, 111);
