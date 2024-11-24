@@ -75,13 +75,18 @@ i {
 button {
     padding: 8px 15px;
     cursor: pointer;
-    border: 1px groove rgb(255, 217, 111);
+    border: 1px solid rgb(255, 217, 111);
     border-radius: 50px;
     color: rgb(255, 217, 111);
     background-color: rgba(0, 86, 173, 0.767);
     font-family: 'Gruppo', sans-serif;
     font-weight: 700;
     transition: all 0.3s;
+}
+
+button:hover {
+    color: rgba(0, 86, 173, 0.767);
+    background-color:  rgb(255, 217, 111);
 }
 
 .fa-square-facebook:hover, .fa-square-x-twitter:hover, .fa-square-instagram:hover {
