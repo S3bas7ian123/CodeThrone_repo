@@ -32,7 +32,7 @@ article {
     margin: 10rem;
     height: 350px;
     width: 450px;
-    background-color: rgb(113, 161, 177);
+    /* background-color: rgb(113, 161, 177); */
 } 
 
 section {
@@ -72,10 +72,6 @@ i {
     transition: all 0.3s;
 }
 
-i:hover {
-    color: rgba(255, 217, 111, 0.856);
-}
-
 button {
     padding: 8px 15px;
     cursor: pointer;
@@ -85,6 +81,11 @@ button {
     background-color: rgba(0, 86, 173, 0.767);
     font-family: 'Gruppo', sans-serif;
     font-weight: 700;
+    transition: all 0.3s;
+}
+
+.fa-square-facebook:hover, .fa-square-x-twitter:hover, .fa-square-instagram:hover {
+    color: rgba(191, 223, 255, 0.466);
 }
 
 .setHuge, .setTiny {
