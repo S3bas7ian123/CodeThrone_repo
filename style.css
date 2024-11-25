@@ -8,7 +8,7 @@
 }
 
 html, body {
-    height: 100vh;
+    height: 100%;
     background-color: rgba(0, 86, 173, 0.767);
 }
 
@@ -112,4 +112,10 @@ button {
 }
 
 
+/* Form settings */
+.imgDevKing {
+    width: 150px;
+    display: block;
+    border-radius: 50%;
+}
 

@@ -10,9 +10,8 @@
 </head>
 <body>
     
-    <article>
+    <!-- <article>
         <section>
-            <img src="" alt="">
             <h1>Welcome to CodeThrone</h1>
             <h4><em>If you can dream it, you can code it!</em></h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt perspiciatis delectus id officiis debitis ipsam possimus quod nisi ducimus eum quidem voluptatem, voluptates, ratione soluta totam odit quaerat aliquid? Ut!</p>
@@ -27,28 +26,31 @@
                 <button>Submit!</button>
             </div>
         </section>
-    </article>
+    </article> -->
 
-    <form>
-        <header>
-            <img src="" alt="">
-        </header>
-        <main>
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+    <div id="id01" class="modal">
+        <form>
+            <header>
+                <span class="closeModal"></span>
+                <img src="img/DevKing.jpg" alt="Developer Image" class="imgDevKing">
+            </header>
+            <main>
+                <label for="devName"><b>Developer Name</b></label>
+                <input type="text" placeholder="Enter Username" name="devName" required>
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
 
-            <button type="submit">Login</button>
-            <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-        </main>
-        <footer>
-            
-        </footer>
-    </form>    
+                <button type="submit">Login</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </main>
+            <footer>
+                <button type="button" class="cancelBtn">Cancel</button>
+            </footer>
+        </form>
+    </div>
 </body>
 </html>
 
