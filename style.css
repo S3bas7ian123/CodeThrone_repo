@@ -84,10 +84,10 @@ button {
     transition: all 0.2s;
 }
 
-/* button:hover {
+.buttonUp {
     color: rgba(0, 86, 173, 0.767);
     background-color:  rgb(255, 217, 111);
-} */
+}
 
 .setHuge, .setTiny {
     color: rgb(255, 217, 111);
