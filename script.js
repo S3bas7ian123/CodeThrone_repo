@@ -9,8 +9,9 @@ const iconTwitter = document.querySelector('.fa-square-x-twitter');
 const iconInstagram= document.querySelector('.fa-square-instagram');
 const icons = [iconFacebook, iconTwitter, iconInstagram];
 
-/* Dom manipulation = BUTTON */
-
+/* Dom manipulation = INPUT/LABEL */
+const entUs = document.querySelector('.inputUser');
+const entPsw = document.querySelector('.inputPsw');
 
 /* SETTINGS */
 titleHuge.classList.add('setHuge');
@@ -27,6 +28,10 @@ icons.forEach((icon) => {
         icon.classList.remove('mouseEnterIcons');
     })
 });
+
+
+
+
 
 
 
