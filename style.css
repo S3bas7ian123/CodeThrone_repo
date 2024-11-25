@@ -47,7 +47,7 @@ section p {
     text-align: justify;
 }
 
-div {
+.iconsContent {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -103,7 +103,7 @@ button {
    font-size: 13px;
 }
 
-.setHuge, .setPara {
+.setHuge, .setPara, form {
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -113,9 +113,28 @@ button {
 
 
 /* Form settings */
+.modal {
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+header {
+    background-color: aqua;
+    text-align: center;
+    margin: 24px 0px 24px 0px;
+}
+
 .imgDevKing {
-    width: 150px;
-    display: block;
+    width: 120px;
     border-radius: 50%;
 }
+/* .hamburgerMenu {
+    height: 2px;
+    width: 27px;
+    background-color: black;
+    margin: 6px 0;
+} */
 
