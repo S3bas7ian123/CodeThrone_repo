@@ -10,7 +10,7 @@ const iconInstagram= document.querySelector('.fa-square-instagram');
 const icons = [iconFacebook, iconTwitter, iconInstagram];
 
 /* Dom manipulation = BUTTON */
-const buttonCool = document.querySelector('button');
+
 
 /* SETTINGS */
 titleHuge.classList.add('setHuge');
@@ -28,12 +28,7 @@ icons.forEach((icon) => {
     })
 });
 
-// buttonCool.addEventListener('mouseenter', () => {
-//     buttonCool.classList.add('');
-// })
 
-// buttonCool.addEventListener('mouseleave', () => {
-//     buttonCool.classList.remove('');
-// })
+
 
 
