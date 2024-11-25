@@ -123,7 +123,7 @@ button {
 
 form {
     margin: 5% auto 15% auto;
-    width: 50%;
+    width: 40%;
     background-color:  rgba(38, 107, 175, 0.767);
     border-radius: 8px;
 }
@@ -135,6 +135,7 @@ header {
 }
 
 .imgDevKing {
+    margin: 10px 0 -20px 0;
     width: 120px;
     border-radius: 50%;
 }
@@ -151,4 +152,14 @@ main {
     margin: 15px;
     padding: 10px;
     gap: 10px;
+}
+
+.setInput{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'Gruppo', sans-serif;
 }
