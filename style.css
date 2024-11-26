@@ -30,7 +30,8 @@ body {
 
 article { 
     margin: 10rem;
-    width: 450px;
+    max-width: 450px;
+    width: 90%;
 } 
 
 section {
@@ -129,21 +130,23 @@ button {
     width: 100%; 
     height: 100%; 
     background-color: rgba(0,0,0,0.4); 
-    opacity: 0;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0; /* Trasparente all'inizio */
+    transform: translateY(0); /* Rimuoviamo il movimento verso l'alto */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transizione leggera */
 }
 
 .modalShow {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
+    display: block; /* Impostiamo display: block quando deve essere visibile */
+    opacity: 1; /* Aumentiamo l'opacità */
+    transform: translateY(0); /* La modale va nella posizione finale senza spostamenti */
 }
 
 form {
     margin: 5% auto 15% auto;
-    width: 35%;
-    background-color:  rgba(38, 107, 175);
+    padding: 20px;
+    max-width: 600px;
+    width: 90%;
+    background-color:  rgba(38, 107, 175, 0.9);
     border-radius: 8px;
 }
 
@@ -158,12 +161,6 @@ header {
     width: 120px;
     border-radius: 50%;
 }
-/* .hamburgerMenu {
-    height: 2px;
-    width: 27px;
-    background-color: black;
-    margin: 6px 0;
-} */
 
 main {
     display: flex;
@@ -202,4 +199,26 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+@media  screen and (max-width: 768px) {
+    article, form {
+        width: 90%;
+        margin: 5% auto;
+    }
+}
+
+@media  screen and (max-width: 480px) {
+    article, form {
+        width: 95%;
+        margin: 5% auto;
+    }
+
+    footer, .iconsContent {
+        flex-direction: column;
+    }
+
+    .iconsContent {
+        gap: 10px;
+    }
 }

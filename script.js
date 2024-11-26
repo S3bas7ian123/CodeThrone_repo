@@ -49,17 +49,18 @@ buttons.forEach((button) => {
 submit.addEventListener('click' , () => {
     contForm.style.display = 'block';
 
+    // Utilizziamo setTimeout per ritardare l'animazione
     setTimeout(() => {
         contForm.classList.add('modalShow');
-    }, 100);
+    }, 100); // Piccolo ritardo prima che inizi l'animazione 100ms = millisecondi
 });
 
 cBtn.addEventListener('click', () => {
-    contForm.classList.remove('modalShow');
+    contForm.classList.remove('modalShow');// Rimuoviamo la classe 'modalShow' per nascondere la modale con animazione
     
-    setTimeout(() => {
+    setTimeout(() => { // Dopo l'animazione, nascondiamo completamente la modale
         contForm.style.display = 'none';
-    }, 500);
+    }, 500); // Dobbiamo aspettare che l'animazione finisca
 });
 
 window.onclick = function(closeAnywhere){
