@@ -30,13 +30,17 @@ body {
 
 article { 
     margin: 10rem;
-    height: 350px;
+    /* height: 350px; */
     width: 450px;
-    /* background-color: rgb(113, 161, 177); */
+    background-color: rgb(113, 161, 177);
 } 
 
 section {
     padding: 10px;
+}
+
+h1 {
+ font-size: 30px;
 }
 
 section h1, h4{
