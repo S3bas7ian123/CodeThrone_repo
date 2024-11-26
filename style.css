@@ -109,8 +109,13 @@ button {
     font-family: 'Orbitron', sans-serif;
 }
 
-.mouseEnterIcons {
+.mouseHoverIcons {
     color:  rgba(255, 217, 111, 0.76);
+}
+
+.mouseHoverButton {
+    color: rgba(0, 86, 173, 0.767);
+    background-color: rgb(255, 217, 111);
 }
 
 

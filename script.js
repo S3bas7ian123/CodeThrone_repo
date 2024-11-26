@@ -10,8 +10,10 @@ const iconInstagram= document.querySelector('.fa-square-instagram');
 const icons = [iconFacebook, iconTwitter, iconInstagram];
 
 /* Dom manipulation = BUTTON */
-const loginBtn = document.querySelector('.subBtn');
+const submit = document.querySelector('.subBtn');
 const cBtn = document.querySelector('.cancelBtn');
+const lBtn = document.querySelector('.logButton');
+const buttons = [submit, cBtn, lBtn];
 // console.log(loginBtn, cBtn);
 
 /* Dom manipulation = MODALWINDOW */
@@ -25,27 +27,37 @@ para.classList.add('setPara');
 /* FUNCTIONS */
 icons.forEach((icon) => {
     icon.addEventListener('mouseenter', () => {
-        icon.classList.add('mouseEnterIcons');
+        icon.classList.add('mouseHoverIcons');
     })
 
     icon.addEventListener('mouseleave', ()=> {
-        icon.classList.remove('mouseEnterIcons');
+        icon.classList.remove('mouseHoverIcons');
     })
 });
 
-loginBtn.addEventListener('click' , () => {
+buttons.forEach((button) => {
+    button.addEventListener('mouseenter' , () => {
+        button.classList.add('mouseHoverButton');
+    });
+
+    button.addEventListener('mouseleave' , () => {
+        button.classList.remove('mouseHoverButton');
+    });
+});
+
+submit.addEventListener('click' , () => {
     document.querySelector('#containerForm').style.display = 'block';
-})
+});
 
 cBtn.addEventListener('click', () => {
      document.querySelector('#containerForm').style.display = 'none';
-})
+});
 
 window.onclick = function(closeAnywhere){
     if(closeAnywhere.target == modalWindow) {
         modalWindow.style.display = 'none';
-    }
-}
+    };
+};
 
 
 
