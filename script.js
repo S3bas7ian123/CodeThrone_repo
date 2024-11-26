@@ -10,6 +10,7 @@ const iconInstagram= document.querySelector('.fa-square-instagram');
 const icons = [iconFacebook, iconTwitter, iconInstagram];
 
 /* Dom manipulation = BUTTON */
+const contForm = document.querySelector('#containerForm');
 const submit = document.querySelector('.subBtn');
 const cBtn = document.querySelector('.cancelBtn');
 const lBtn = document.querySelector('.logButton');
@@ -46,11 +47,19 @@ buttons.forEach((button) => {
 });
 
 submit.addEventListener('click' , () => {
-    document.querySelector('#containerForm').style.display = 'block';
+    contForm.style.display = 'block';
+
+    setTimeout(() => {
+        contForm.classList.add('modalShow');
+    }, 100);
 });
 
 cBtn.addEventListener('click', () => {
-     document.querySelector('#containerForm').style.display = 'none';
+    contForm.classList.remove('modalShow');
+    
+    setTimeout(() => {
+        contForm.style.display = 'none';
+    }, 500);
 });
 
 window.onclick = function(closeAnywhere){
