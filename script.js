@@ -14,6 +14,9 @@ const loginBtn = document.querySelector('.subBtn');
 const cBtn = document.querySelector('.cancelBtn');
 // console.log(loginBtn, cBtn);
 
+/* Dom manipulation = MODALWINDOW */
+const modalWindow = document.querySelector('.modal');
+
 /* SETTINGS */
 titleHuge.classList.add('setHuge');
 titleTiny.classList.add('setTiny');
@@ -38,7 +41,11 @@ cBtn.addEventListener('click', () => {
      document.querySelector('#containerForm').style.display = 'none';
 })
 
-
+window.onclick = function(closeAnywhere){
+    if(closeAnywhere.target == modalWindow) {
+        modalWindow.style.display = 'none';
+    }
+}
 
 
 
