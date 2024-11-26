@@ -9,6 +9,11 @@ const iconTwitter = document.querySelector('.fa-square-x-twitter');
 const iconInstagram= document.querySelector('.fa-square-instagram');
 const icons = [iconFacebook, iconTwitter, iconInstagram];
 
+/* Dom manipulation = BUTTON */
+const loginBtn = document.querySelector('.subBtn');
+const cBtn = document.querySelector('.cancelBtn');
+// console.log(loginBtn, cBtn);
+
 /* SETTINGS */
 titleHuge.classList.add('setHuge');
 titleTiny.classList.add('setTiny');
@@ -25,7 +30,13 @@ icons.forEach((icon) => {
     })
 });
 
+loginBtn.addEventListener('click' , () => {
+    document.querySelector('#containerForm').style.display = 'block';
+})
 
+cBtn.addEventListener('click', () => {
+     document.querySelector('#containerForm').style.display = 'none';
+})
 
 
 
