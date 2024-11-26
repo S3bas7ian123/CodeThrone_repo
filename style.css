@@ -149,9 +149,17 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    margin: 13px;
     padding: 10px;
     gap: 10px;
+}
+
+label {
+    color:  rgb(255, 202, 58);
+}
+
+.labelRemMe {
+    color: rgba(162, 209, 255, 0.767);
 }
 
 input[type=text], input[type=password] {
@@ -159,8 +167,16 @@ input[type=text], input[type=password] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 2px solid rgb(0, 86, 172);
     border-radius: 5px;
     box-sizing: border-box;
     font-family: 'Gruppo', sans-serif;
+}
+
+footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* background-color: antiquewhite; */
 }
