@@ -123,7 +123,7 @@ button {
 
 form {
     margin: 5% auto 15% auto;
-    width: 40%;
+    width: 35%;
     background-color:  rgba(38, 107, 175, 0.767);
     border-radius: 8px;
 }
@@ -159,7 +159,7 @@ label {
 }
 
 .labelRemMe {
-    color: rgba(162, 209, 255, 0.767);
+    font-size: 13px;
 }
 
 input[type=text], input[type=password] {
@@ -172,11 +172,15 @@ input[type=text], input[type=password] {
     font-family: 'Gruppo', sans-serif;
 }
 
+.checkMark {
+    height: 15px;
+    width: 15px;
+}
+
 footer {
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    /* background-color: antiquewhite; */
 }
