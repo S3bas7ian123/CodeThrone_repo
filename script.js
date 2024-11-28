@@ -26,7 +26,7 @@ titleTiny.classList.add('setTiny');
 para.classList.add('setPara');
 
 /* FUNCTIONS */
-function components() {
+function mouseEvents() {
     icons.forEach((icon) => {
         icon.addEventListener('mouseenter', () => {
             icon.classList.add('mouseHoverIcons');
@@ -46,7 +46,9 @@ function components() {
             button.classList.remove('mouseHoverButton');
         });
     });
-    
+}    
+
+function btnsModalWind() {
     submit.addEventListener('click' , () => {
         contForm.style.display = 'block';
     
@@ -65,7 +67,10 @@ function components() {
     });
 }
 
-components();
+// Section where i call the functions:
+mouseEvents();
+btnsModalWind();
+
 // icons.forEach((icon) => {
 //     icon.addEventListener('mouseenter', () => {
 //         icon.classList.add('mouseHoverIcons');
