@@ -71,48 +71,7 @@ function btnsModalWind() {
 mouseEvents();
 btnsModalWind();
 
-// icons.forEach((icon) => {
-//     icon.addEventListener('mouseenter', () => {
-//         icon.classList.add('mouseHoverIcons');
-//     })
 
-//     icon.addEventListener('mouseleave', ()=> {
-//         icon.classList.remove('mouseHoverIcons');
-//     })
-// });
-
-// buttons.forEach((button) => {
-//     button.addEventListener('mouseenter' , () => {
-//         button.classList.add('mouseHoverButton');
-//     });
-
-//     button.addEventListener('mouseleave' , () => {
-//         button.classList.remove('mouseHoverButton');
-//     });
-// });
-
-// submit.addEventListener('click' , () => {
-//     contForm.style.display = 'block';
-
-//     // Utilizziamo setTimeout per ritardare l'animazione
-//     setTimeout(() => {
-//         contForm.classList.add('modalShow');
-//     }, 100); // Piccolo ritardo prima che inizi l'animazione 100ms = millisecondi
-// });
-
-// cBtn.addEventListener('click', () => {
-//     contForm.classList.remove('modalShow');// Rimuoviamo la classe 'modalShow' per nascondere la modale con animazione
-    
-//     setTimeout(() => { // Dopo l'animazione, nascondiamo completamente la modale
-//         contForm.style.display = 'none';
-//     }, 500); // Dobbiamo aspettare che l'animazione finisca
-// });
-
-// window.onclick = function(closeAnywhere){
-//     if(closeAnywhere.target == modalWindow) {
-//         modalWindow.style.display = 'none';
-//     };
-// };
 
 
 
